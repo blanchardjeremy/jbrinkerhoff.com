@@ -12,7 +12,7 @@ body {
 
 .header {
     background: url("../img/header-bg-inner.jpg") center top repeat-x;
-    height: 99px;
+    height: 107px;
     position: fixed;
     left: 0;
     right: 0;
@@ -20,12 +20,11 @@ body {
     z-index: 1030;
     margin-bottom: 0;
 }
-
-#home .header .container {
-    height: 293px;
+.header .container {
+    height: 107px;
 }
 body {
-    margin-top: 99px;
+    margin-top: 107px;
 }
 
 #home .header {
@@ -35,7 +34,6 @@ body {
 #home .header .container {
     height: 293px;
 }
-
 body#home {
     margin-top: 293px;
 }
@@ -59,10 +57,10 @@ h1.logo {
     height: 140px;
     position: relative;
     right: 0;
-    top: 51px;
+    top: 59px;
 }
 #home h1.logo {
-    top: 233px;
+    top: 245px;
 }
 
 /* ========================== HOME ======== */
