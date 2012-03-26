@@ -10,7 +10,7 @@ body {
 }
 
 
-.header-bg {
+.header {
     background: url("../img/header-bg-inner.jpg") center top repeat-x;
     height: 99px;
     position: fixed;
@@ -20,21 +20,27 @@ body {
     z-index: 1030;
     margin-bottom: 0;
 }
+
+#home .header .container {
+    height: 293px;
+}
 body {
     margin-top: 99px;
 }
 
-
-#home .header-bg {
+#home .header {
     background: url("../img/header-bg-home.jpg") center top repeat-x;
-    height: 299px;
+    height: 293px;
 }
+#home .header .container {
+    height: 293px;
+}
+
 body#home {
-    margin-top: 299px;
+    margin-top: 293px;
 }
 
-
-.footer-bg {
+.footer {
     background: url("../img/footer.png") center bottom repeat-x;
     height: 31px;
     position: fixed;
@@ -47,10 +53,19 @@ body#home {
 
 
 /* ========================== CROSS-SITE ======== */
-
-
-
+h1.logo {
+    background: url("../img/jessilyn-brinkerhoff-logo.png") right center no-repeat;
+    /*width: 258px;*/
+    height: 140px;
+    position: relative;
+    right: 0;
+    top: 51px;
+}
+#home h1.logo {
+    top: 233px;
+}
 
 /* ========================== HOME ======== */
+
 
 /* ========================== INNER ======== */

@@ -12,13 +12,26 @@
 
 
 {% block pre_container %}
-<header class="header-bg">
+<header class="header">
+{% block header %}
+    <div class="container">
+        <h1 class="logo hide-text">Jessilyn Brinkerhoff</h1>
+    </div>
+{% endblock %}
 </header>
 {% endblock %}
 
 
+{% block container %}
+    <div class="row">
+        <div class="span8">
+            {{ super() }}
+        </div>
+    </div>
+{% endblock %}
+
 {% block post_container %}
-<footer class="footer-bg">
+<footer class="footer">
 
 </footer>
 {% endblock %}

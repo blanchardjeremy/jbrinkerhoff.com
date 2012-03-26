@@ -21,5 +21,5 @@ class TempView(TemplateView):
 class HomeView(TemplateView):
     template_name = 'portfolio/home.html'
 
-class WorkView(TemplateView):
-    template_name = 'portfolio/work.html'
+class InnerView(TemplateView):
+    template_name = 'portfolio/inner.html'
