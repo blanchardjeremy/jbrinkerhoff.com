@@ -1,0 +1,31 @@
+# Jessilyn Brinkerhoff Portfolio
+
+A Django application for Jessilyn Brinkerhoff's portfolio.
+
+Visit the site at **[ SITE DOMAIN NAME HERE][jb]**
+
+## Dependencies
+
+  * [python-flickr-api](http://code.google.com/p/python-flickr-api/)
+
+## Usage
+When you begin working on this project, do the following:
+
+    cd ~/Projects/thisproject/code
+    source .env                     # Load the system-specific settings for this project
+    ./root/manage.py syncdb         # Initialize the database
+    ./root/manage.py runserver      # Launch your server. Visit http://localhost:8000/
+
+
+## Possible Features
+Some things we might want to implement in the future:
+
+  * Caching of Flickr API calls
+  * Caching of Flickr images
+
+
+## Author
+Built with love! Design by [Jessilyn Brinkerhoff][jb] and code by [Jeremy Blanchard](http://blanchardjeremy.com).
+
+
+[jb]: http://TODO PUT A SITE HERE

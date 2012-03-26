@@ -1,0 +1,6 @@
+*~
+.DS_Store
+*.pyc
+root/static/*
+root/uploads/*
+.env

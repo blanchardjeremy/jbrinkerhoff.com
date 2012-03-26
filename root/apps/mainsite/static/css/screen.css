@@ -1,0 +1,56 @@
+
+/* ========================== STRUCTURE ======== */
+
+html {
+   min-height: 100%;
+}
+
+body {
+    background: url("../img/footer.png") center bottom repeat-x;
+}
+
+
+.header-bg {
+    background: url("../img/header-bg-inner.jpg") center top repeat-x;
+    height: 99px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1030;
+    margin-bottom: 0;
+}
+body {
+    margin-top: 99px;
+}
+
+
+#home .header-bg {
+    background: url("../img/header-bg-home.jpg") center top repeat-x;
+    height: 299px;
+}
+body#home {
+    margin-top: 299px;
+}
+
+
+.footer-bg {
+    background: url("../img/footer.png") center bottom repeat-x;
+    height: 31px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1030;
+    margin-bottom: 0;
+}
+
+
+/* ========================== CROSS-SITE ======== */
+
+
+
+
+/* ========================== HOME ======== */
+
+/* ========================== INNER ======== */

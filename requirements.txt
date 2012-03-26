@@ -1,0 +1,10 @@
+Django==1.4
+Jinja2==2.6
+South==0.7.3
+distribute==0.6.15
+jingo==0.4
+psycopg2==2.4.1
+wsgiref==0.1.2
+oauth==1.0.1
+svn+http://python-flickr-api.googlecode.com/svn/trunk/#egg=flickr_api
+django-cache-utils==0.7.2
