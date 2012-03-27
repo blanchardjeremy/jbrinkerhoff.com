@@ -23,6 +23,18 @@ Some things we might want to implement in the future:
   * Caching of Flickr API calls
   * Caching of Flickr images
 
+## Heroku deploy instructions
+
+    # Follow the heroku quickstart guide to get it installed and your authentication going
+    heroku apps:create --stack=cedar jbrinkerhoff
+    heroku config:add FLICKR_SECRET=a77777771e5baaaa
+    # repeat config:add for secret key and any other variables in .env
+    heroku push heroku master
+    # Custom domains: configure your DNS as such: https://devcenter.heroku.com/articles/custom-domains
+    heroku domains:add www.jbrinkerhoff.com
+    heroku domains:add jbrinkerhoff.com
+
+
 
 ## Author
 Built with love! Design by [Jessilyn Brinkerhoff][jb] and code by [Jeremy Blanchard](http://blanchardjeremy.com).
