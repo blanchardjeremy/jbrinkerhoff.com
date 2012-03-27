@@ -39,17 +39,18 @@
             <div class="row">
                 <div class="span4 offset8">
                     <ul class="unstyled">
+                        {% set inner = url('inner') %}
                         <li>
-                            <a href="#work">Work</a>
+                            <a href="{{ inner }}#work">Work</a>
                             <ul class="unstyled nav-work">
-                                <li><a href="#art">Art</a></li>
-                                <li><a href="#design">Design</a></li>
-                                <li><a href="#objects">Objects</a></li>
-                                <li><a href="#sketchbook">Sketchbook</a></li>
+                                <li><a href="{{ inner }}#art">Art</a></li>
+                                <li><a href="{{ inner }}#design">Design</a></li>
+                                <li><a href="{{ inner }}#objects">Objects</a></li>
+                                <li><a href="{{ inner }}#sketchbook">Sketchbook</a></li>
                             </ul>
                         </li>
-                        <li><a href="#contact">About</a></li>
-                        <li><a href="#about">Contact</a></li>
+                        <li><a href="{{ inner }}#about">About</a></li>
+                        <li><a href="{{ inner }}#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>

@@ -19,8 +19,8 @@ html {
 .header .container {
     height: 107px;
 }
-body {
-    margin-top: 107px;
+.container-primary h2 {
+    padding-top: 107px; /* For the nav jumping to work */
 }
 
 #home .header {
@@ -52,6 +52,7 @@ body#home {
 h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .quote {
@@ -127,7 +128,6 @@ h1.logo {
 /* ========================== HOME ======== */
 h2.welcome {
     color: white;
-    text-transform: uppercase;
     font-weight: 400;
     float: right;
     margin-right: 220px;
