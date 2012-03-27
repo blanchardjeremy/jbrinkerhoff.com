@@ -57,10 +57,14 @@ h1.logo {
     height: 140px;
     position: relative;
     right: 0;
-    top: 59px;
+    top: 40px;
 }
 #home h1.logo {
-    top: 245px;
+    top: 226px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
 }
 
 /* ========================== HOME ======== */

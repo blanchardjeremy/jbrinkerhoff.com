@@ -6,5 +6,6 @@ jingo==0.4
 psycopg2==2.4.1
 wsgiref==0.1.2
 oauth==1.0.1
-svn+http://python-flickr-api.googlecode.com/svn/trunk/#egg=flickr_api
+#svn+http://python-flickr-api.googlecode.com/svn/trunk/#egg=flickr_api
+git+https://auzigog@github.com/auzigog/python-flickr-api.git#egg=flickr_api
 django-cache-utils==0.7.2
