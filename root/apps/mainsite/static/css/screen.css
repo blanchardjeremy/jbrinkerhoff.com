@@ -47,6 +47,24 @@ body#home {
 
 
 /* ========================== CROSS-SITE ======== */
+
+
+h1, h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.quote {
+    color: white;
+    font-size: 10px;
+    line-height: 14px;
+    height: 32px;
+    text-align: right;
+    /*overflow: hidden;*/
+}
+.out-of-flow {
+    position: absolute;
+}
+
 h1.logo {
     background: url("../img/jessilyn-brinkerhoff-logo.png") right center no-repeat;
     height: 140px;
@@ -58,21 +76,17 @@ h1.logo {
     top: 226px;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Oswald', sans-serif;
-}
-
 .nav-main {
     height: 200px;
     position: fixed;
     left: 0;
     right: 0;
-    top: 107px;
+    top: 184px;
     z-index: 1030;
     margin-bottom: 0;
 }
 #home .nav-main {
-    top: 370px;
+    top: 370px; /* 370-293=77 .... 107+77=184 */
 }
 
 .nav-main ul {
@@ -107,6 +121,7 @@ h1, h2, h3, h4 {
     color: #444;
     font-size: 14px;
 }
+
 
 /* ========================== HOME ======== */
 h2.welcome {
