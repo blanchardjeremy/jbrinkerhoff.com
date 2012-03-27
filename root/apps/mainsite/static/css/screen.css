@@ -51,6 +51,7 @@ body#home {
 
 h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
+    font-weight: 400;
 }
 
 .quote {
@@ -70,10 +71,10 @@ h1.logo {
     height: 140px;
     position: relative;
     right: 0;
-    top: 40px;
+    top: 48px;
 }
 #home h1.logo {
-    top: 226px;
+    top: 234px;
 }
 
 .nav-main {
@@ -129,7 +130,7 @@ h2.welcome {
     text-transform: uppercase;
     font-weight: 400;
     float: right;
-    margin-right: 260px;
+    margin-right: 220px;
     margin-top: 124px;
 }
 
