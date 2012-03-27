@@ -39,7 +39,9 @@
             <div class="row">
                 <div class="span4 offset8">
                     <ul class="unstyled">
-                        {% set inner = '' %}
+                        {% if request.META['PATH_INFO'] == url('home') %}
+                            {% set inner = url('inner') %}
+                        {% endif %}
                         <li>
                             <a href="{{ inner }}#work">Work</a>
                             <ul class="unstyled nav-work">
