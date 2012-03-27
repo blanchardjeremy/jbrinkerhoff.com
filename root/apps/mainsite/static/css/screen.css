@@ -62,6 +62,22 @@ h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
 }
 
+.nav-main {
+    height: 200px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 107px;
+    z-index: 1030;
+    margin-bottom: 0;
+}
+#home .nav-main {
+    top: 370px;
+}
+
+.nav-main ul {
+}
+
 /* ========================== HOME ======== */
 h2.welcome {
     color: white;
