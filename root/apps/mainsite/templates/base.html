@@ -11,7 +11,7 @@
 
 {% block meta %}
     {{ super() }}
-    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+    <link rel="icon"href="{{ STATIC_URL }}img/favicon.png">
 {% endblock %}
 
 
@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="span4 offset8">
                     <ul class="unstyled">
-                        {% set inner = url('inner') %}
+                        {% set inner = '' %}
                         <li>
                             <a href="{{ inner }}#work">Work</a>
                             <ul class="unstyled nav-work">
