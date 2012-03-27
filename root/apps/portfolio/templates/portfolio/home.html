@@ -2,6 +2,12 @@
 
 {% block body_id %}home{% endblock %}
 
+{% block header_inner %}
+    {{ super() }}
+    <h2 class="welcome">Welcome to the work and play of</h2>
+{% endblock %}
+
+
 {% block content %}
 {{ lipsum(22) }}
 {% endblock %}

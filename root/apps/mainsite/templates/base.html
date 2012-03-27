@@ -18,13 +18,15 @@
 
 
 {% block pre_container %}
-<header class="header">
-{% block header %}
-    <div class="container">
-        <h1 class="logo hide-text">Jessilyn Brinkerhoff</h1>
-    </div>
-{% endblock %}
-</header>
+    <header class="header">
+        {% block header %}
+            <div class="container">
+                {% block header_inner %}
+                    <h1 class="logo hide-text">Jessilyn Brinkerhoff</h1>
+                {% endblock %}
+            </div>
+        {% endblock %}
+    </header>
 {% endblock %}
 
 

@@ -27,7 +27,7 @@ Some things we might want to implement in the future:
 
     # Follow the heroku quickstart guide to get it installed and your authentication going
     heroku apps:create --stack=cedar jbrinkerhoff
-    heroku config:add FLICKR_SECRET=a77777771e5baaaa
+    heroku config:add FLICKR_SECRET=aaaaaaaaaaaaaaaa
     # repeat config:add for secret key and any other variables in .env
     heroku push heroku master
     # Custom domains: configure your DNS as such: https://devcenter.heroku.com/articles/custom-domains

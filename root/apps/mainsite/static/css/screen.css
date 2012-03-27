@@ -5,10 +5,6 @@ html {
    min-height: 100%;
 }
 
-body {
-    background: url("../img/footer.png") center bottom repeat-x;
-}
-
 
 .header {
     background: url("../img/header-bg-inner.jpg") center top repeat-x;
@@ -53,7 +49,6 @@ body#home {
 /* ========================== CROSS-SITE ======== */
 h1.logo {
     background: url("../img/jessilyn-brinkerhoff-logo.png") right center no-repeat;
-    /*width: 258px;*/
     height: 140px;
     position: relative;
     right: 0;
@@ -68,6 +63,14 @@ h1, h2, h3, h4 {
 }
 
 /* ========================== HOME ======== */
+h2.welcome {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    float: right;
+    margin-right: 280px;
+    margin-top: 124px;
+}
 
 
 /* ========================== INNER ======== */
