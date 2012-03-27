@@ -44,6 +44,9 @@ body#home {
     z-index: 1030;
     margin-bottom: 0;
 }
+body {
+    padding-bottom: 40px;
+}
 
 
 /* ========================== CROSS-SITE ======== */
