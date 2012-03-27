@@ -2,7 +2,7 @@
 
 A Django application for Jessilyn Brinkerhoff's portfolio.
 
-Visit the site at **[ SITE DOMAIN NAME HERE][jb]**
+Visit the site at **[http://jbrinkerhoff.com][jb]**
 
 ## Dependencies
 
@@ -40,4 +40,4 @@ Some things we might want to implement in the future:
 Built with love! Design by [Jessilyn Brinkerhoff][jb] and code by [Jeremy Blanchard](http://blanchardjeremy.com).
 
 
-[jb]: http://TODO PUT A SITE HERE
+[jb]: http://jbrinkerhoff.com
