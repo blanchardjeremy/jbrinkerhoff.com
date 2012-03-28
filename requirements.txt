@@ -10,3 +10,5 @@ oauth==1.0.1
 git+https://github.com/auzigog/python-flickr-api.git#egg=flickr_api
 git+https://github.com/auzigog/jinja-bootstrap.git#egg=bootstrap
 git+https://github.com/qnub/Jinja2-Markdown.git
+
+
