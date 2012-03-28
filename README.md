@@ -34,9 +34,13 @@ Some things we might want to implement in the future:
     heroku config:add FLICKR_SECRET=aaaaaaaaaaaaaaaa
     # repeat config:add for secret key and any other variables in .env
     heroku push heroku master
+    # Get the db and starter data ready
+    heroku run python manage.py syncdb --noinput
+    heroku run python manage.py loaddata starter_data
     # Custom domains: configure your DNS as such: https://devcenter.heroku.com/articles/custom-domains
     heroku domains:add www.jbrinkerhoff.com
     heroku domains:add jbrinkerhoff.com
+
 
 
 
