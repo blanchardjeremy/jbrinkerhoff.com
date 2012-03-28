@@ -8,34 +8,19 @@
             <section class="bio">
                 <h2 class="about">Me</h2>
 {% markdown %}
-Creative acts propel me through each day. During my days at
-university, I inhabited creative studios, classrooms and offices. I learned and earned. After many epiphanies, conversations and
-inspiration from incredible people, I now inhabit new spaces. I find myself in gardens, in kitchens and in communities.
-
-I am an Oregonian looking to bring my creative skills into the realm of solutions. I enjoy collaborating with non-profits,
-organizers and those working for change.
+{{ snippets['bio'].text|safe }}
 {% endmarkdown %}
             </section>
             <section class="know">
                 <h2>What I Know</h2>
 {% markdown %}
-Design (see <a href="#">resum&eacute;</a>)<br>
-Art<br>
-Community Organizing<br>
-Gardening<br>
+{{ snippets['know'].text|safe }}
 {% endmarkdown %}
             </section>
             <section class="love">
                 <h2>What I Love</h2>
 {% markdown %}
-Humans<br>
-Plants<br>
-Visual Communication<br>
-CrimethInc<br>
-Beehive Collective<br>
-Food<br>
-Creation<br>
-Questions<br>
+{{ snippets['love'].text|safe }}
 {% endmarkdown %}
             </section>
         </div>
@@ -50,7 +35,9 @@ Questions<br>
         <div class="span7">
             <section class="life">
                 <h2>What do you live for?</h2>
-                <p>Tell me at <a href="mailto:oregonjessilyn@gmail.com">oregonjessilyn@gmail.com</a></p>
+{% markdown %}
+{{ snippets['tell'].text|safe }}
+{% endmarkdown %}
             </section>
         </div>
     </div>

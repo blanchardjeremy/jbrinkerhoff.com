@@ -1,0 +1,34 @@
+[
+    {
+        "pk": 1,
+        "model": "portfolio.textsnippet",
+        "fields": {
+            "text": "Creative acts propel me through each day. During my days at university, I inhabited creative studios, classrooms and offices. I learned and earned. After many epiphanies, conversations and inspiration from incredible people, I now inhabit new spaces. I find myself in gardens, in kitchens and in communities.\r\n\r\nI am an Oregonian looking to bring my creative skills into the realm of solutions. I enjoy collaborating with non-profits, organizers and those working for change.",
+            "internal_name": "bio"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "portfolio.textsnippet",
+        "fields": {
+            "text": "Design (see [resum&eacute;](http://noresume.com/))  \r\nArt  \r\nCommunity Organizing  \r\nGardening  ",
+            "internal_name": "know"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "portfolio.textsnippet",
+        "fields": {
+            "text": "Humans  \r\nPlants  \r\nVisual Communication  \r\nCrimethInc  \r\nBeehive Collective  \r\nFood  \r\nCreation  \r\nQuestions  ",
+            "internal_name": "love"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "portfolio.textsnippet",
+        "fields": {
+            "text": "Tell me at [oregonjessilyn@gmail.com](mailto:oregonjessilyn@gmail.com)",
+            "internal_name": "tell"
+        }
+    }
+]

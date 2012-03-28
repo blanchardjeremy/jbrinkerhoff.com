@@ -37,3 +37,12 @@ class PortfolioSection(object):
     def getPhotos(self):
         extras = ['url_sq', 'url_s', 'url_t', 'url_m', 'url_o', 'description']
         return self.photoset.getPhotos(extras=extras)
+
+
+
+class TextSnippet(models.Model):
+    internal_name = models.CharField(max_length=32)
+    text = models.TextField(help_text="You can can format (bold, italic, lists, etc) your text like this: <a href=\"http://nestacms.com/docs/creating-content/markdown-cheat-sheet\">markdown</a>. If you want a line break without starting a whole new paragraph, end the line with two spaces.")
+
+    def __unicode__(self):
+        return self.internal_name

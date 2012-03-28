@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 from django.views.generic import TemplateView
 from django.views.generic.base import RedirectView
 import flickr_api
-from portfolio.models import Portfolio
+from portfolio.models import Portfolio, TextSnippet
 
 
 class HomeView(TemplateView):
@@ -14,12 +14,16 @@ class InnerView(TemplateView):
     template_name = 'portfolio/inner.html'
 
 
+    def get_snippets(self):
+        return dict([(s.internal_name, s) for s in TextSnippet.objects.all()])
+
     def get_context_data(self, **kwargs):
         context_data = super(InnerView, self).get_context_data(**kwargs)
 
         portfolio = Portfolio(settings.FLICKR_USER_ID)
         portfolio.setSections(settings.PORTFOLIO_SECTIONS)
         context_data['portfolio'] = portfolio
+        context_data['snippets'] = self.get_snippets()
         return context_data
 
 
