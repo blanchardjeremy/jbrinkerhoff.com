@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 ]
 
 JINGO_EXCLUDE_APPS = ['admin', 'registration',]
+JINJA_CONFIG = {'extensions': ['jinja2_markdown.extensions.MarkdownExtension']}
 
 
 

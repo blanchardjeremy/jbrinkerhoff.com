@@ -4,6 +4,12 @@ A Django application for Jessilyn Brinkerhoff's portfolio.
 
 Visit the site at **[http://jbrinkerhoff.com][jb]**
 
+## Cool things about this site
+
+  * Hosted on Heroku
+  * Uses Jinja2 templates and markdown filters
+  * Uses the flickr api to store/organize photos
+
 ## Dependencies
 
   * [python-flickr-api](http://code.google.com/p/python-flickr-api/)
