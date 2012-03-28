@@ -113,6 +113,10 @@ h1.logo {
 .nav-main ul li a:active {
     /*text-decoration: none;*/
 }
+.nav-main ul li a.has-subnav {
+    float: left; /* Needed because subnav floats right */
+    clear: both;
+}
 
 .nav-main ul ul.nav-work {
     float: right;
