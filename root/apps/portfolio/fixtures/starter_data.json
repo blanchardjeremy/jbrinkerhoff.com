@@ -3,8 +3,7 @@
         "pk": 1,
         "model": "portfolio.quote",
         "fields": {
-            "quote": "carry around all of the waste you generate for one day.  \r\nThis means food, trash, any scraps that would enter the wastestream.",
-            "title": "BEHAVIORAL CUT UP"
+            "quote": "carry around all of the waste you generate for one day.  \r\nThis means food, trash, any scraps that would enter the wastestream."
         }
     },
     {
