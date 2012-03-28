@@ -6,14 +6,11 @@ Visit the site at **[http://jbrinkerhoff.com][jb]**
 
 ## Cool things about this site
 
-  * Hosted on Heroku
-  * Uses Jinja2 templates and markdown filters
-  * Uses the Flickr API to store/organize photos
+  * Hosted on [Heroku](http://www.heroku.com/) (using Jeremy's [Django projecttemplate for heroku](http://github.com/auzigog/django-template-heroku/))
+  * Built on [Twitter Bootstrap](http://twitter.github.com/bootstrap/) (with Jeremy's [Jinja Bootstrap](https://github.com/auzigog/jinja-bootstrap) library)
+  * Uses the Flickr API to store/organize photos (via [python-flickr-api](http://code.google.com/p/python-flickr-api/))
   * Caching of Flickr API requests
-
-## Dependencies
-
-  * [python-flickr-api](http://code.google.com/p/python-flickr-api/)
+  * Uses Jinja2 templates and markdown filters
 
 ## Usage
 When you begin working on this project, do the following:
@@ -27,8 +24,8 @@ When you begin working on this project, do the following:
 ## Possible Features
 Some things we might want to implement in the future:
 
-  * Caching of Flickr API calls
-  * Caching of Flickr images
+  * Combine front page and second page as one scroll effect
+  * Rollover images on the side nav
 
 ## Heroku deploy instructions
 
@@ -43,7 +40,7 @@ Some things we might want to implement in the future:
 
 
 
-## Author
+## Authors
 Built with love! Design by [Jessilyn Brinkerhoff][jb] and code by [Jeremy Blanchard](http://blanchardjeremy.com).
 
 
