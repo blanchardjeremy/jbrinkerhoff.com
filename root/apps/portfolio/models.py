@@ -1,12 +1,8 @@
 from django.conf import settings
 from django.db import models
-from cache_utils.decorators import cached
 from django.template.defaultfilters import slugify
 import flickr_api
 from flickr_api.method_call import call_api
-
-FLICKR_CACHE_GROUP = 'flickr'
-
 
 # Enable caching
 from django.core.cache import cache
@@ -22,7 +18,6 @@ class Portfolio(object):
 #        self.user = flickr_api.Person(id=user_id) # Not currently used
         self._sections = []
 
-#    @cached(settings.FLICKR_CACHE_TIMEOUT, FLICKR_CACHE_GROUP)
     def setSections(self, section_settings):
         for title, set_id in section_settings.iteritems():
             self._sections.append(PortfolioSection(title, set_id))
@@ -39,7 +34,6 @@ class PortfolioSection(object):
         self.set_id = set_id
         self.photoset = flickr_api.Photoset(id=set_id)
 
-#    @cached(settings.FLICKR_CACHE_TIMEOUT, FLICKR_CACHE_GROUP)
     def getPhotos(self):
         extras = ['url_sq', 'url_s', 'url_t', 'url_m', 'url_o', 'description']
         return self.photoset.getPhotos(extras=extras)
