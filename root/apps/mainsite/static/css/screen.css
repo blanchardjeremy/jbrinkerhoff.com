@@ -61,10 +61,13 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 figure {
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 section {
+    margin-top: 40px;
+}
+section section {
     margin-top: 20px;
 }
 

@@ -8,7 +8,8 @@ Visit the site at **[http://jbrinkerhoff.com][jb]**
 
   * Hosted on Heroku
   * Uses Jinja2 templates and markdown filters
-  * Uses the flickr api to store/organize photos
+  * Uses the Flickr API to store/organize photos
+  * Caching of Flickr API requests
 
 ## Dependencies
 

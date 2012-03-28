@@ -28,13 +28,14 @@ FLICKR_SECRET = os.environ['FLICKR_SECRET']
 
 #FLICKR_USER_ID = '8039488@N07' # Auzigog // Jeremy Blanchard
 FLICKR_USER_ID = '68711717@N05'
-
 # A dictionary of section names and flickr set IDs for that section
 PORTFOLIO_SECTIONS = {
     'Art': 72157629677986311,
     'Design': 72157629313341834,
     'Objects': 72157629313343524,
 }
+
+#FLICKR_CACHE_TIMEOUT = 2400 # Minutes
 
 
 INSTALLED_APPS = [
@@ -149,7 +150,7 @@ CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
         'LOCATION': '',
-        'TIMEOUT': 300,
+        'TIMEOUT': 432000, # seconds 60*60*24*5=432000 = 5 days
         'KEY_PREFIX': '',
         'VERSION': 1,
     }
