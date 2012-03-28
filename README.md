@@ -8,7 +8,7 @@ Visit the site at **[http://jbrinkerhoff.com][jb]**
 
   * Hosted on [Heroku](http://www.heroku.com/) (using Jeremy's [Django projecttemplate for heroku](http://github.com/auzigog/django-template-heroku/))
   * Built on [Twitter Bootstrap](http://twitter.github.com/bootstrap/) (with Jeremy's [Jinja Bootstrap](https://github.com/auzigog/jinja-bootstrap) library)
-  * Uses the Flickr API to store/organize photos (via [python-flickr-api](http://code.google.com/p/python-flickr-api/))
+  * Uses the [Flickr API](http://www.flickr.com/services/api/) to store/organize photos (via [python-flickr-api](http://code.google.com/p/python-flickr-api/))
   * Caching of Flickr API requests
   * Uses Jinja2 templates and markdown filters
 
