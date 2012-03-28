@@ -40,7 +40,7 @@
             <div class="row">
                 <div class="span4 offset8">
                     <ul class="unstyled">
-                        {% if request.META['PATH_INFO'] == url('home') %}
+                        {% if is_home %}
                             {% set inner = url('inner') %}
                         {% endif %}
                         <li>
