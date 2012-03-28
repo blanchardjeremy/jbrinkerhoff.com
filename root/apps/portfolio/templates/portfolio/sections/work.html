@@ -25,7 +25,7 @@
             {% for piece in section.getPhotos() %}
                 <figure class="piece">
                     <a href="#"><img src="{{ piece.url_m }}" class="thumbnail"></a>
-                    <figcaption><strong>Title:</strong> Description here</figcaption>
+                    <figcaption><strong>{{ piece.title }}</strong> {{ piece.description }}</figcaption>
                 </figure>
             {% endfor %}
         </section>
