@@ -26,7 +26,15 @@ DJANGO_SERVE_STATIC = boolcheck(os.environ.get('DJANGO_SERVE_STATIC', 'True'))
 FLICKR_KEY = '32a3ec8e88ca294bc1363c374e9cf922'
 FLICKR_SECRET = os.environ['FLICKR_SECRET']
 
-FLICKR_UESR_ID = '8039488@N07' # Auzigog // Jeremy Blanchard
+#FLICKR_USER_ID = '8039488@N07' # Auzigog // Jeremy Blanchard
+FLICKR_USER_ID = '68711717@N05'
+
+# A dictionary of section names and flickr set IDs for that section
+PORTFOLIO_SECTIONS = {
+    'Art': 72157629677986311,
+    'Design': 72157629313341834,
+    'Objects': 72157629313343524,
+}
 
 
 INSTALLED_APPS = [

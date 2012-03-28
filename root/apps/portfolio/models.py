@@ -1,5 +1,6 @@
 from django.db import models
 from cache_utils.decorators import cached
+from django.template.defaultfilters import slugify
 import flickr_api
 from flickr_api.method_call import call_api
 
@@ -9,12 +10,28 @@ from flickr_api.method_call import call_api
 class Portfolio(object):
 
     def __init__(self, user_id):
-        self.user = flickr_api.Person(id=user_id)
+        """
+        sections is a dictionary with keys as a title of the section and values as the flickr set ID for items to display in that section
+        """
+#        self.user = flickr_api.Person(id=user_id) # Not currently used
+        self._sections = []
 
-    def getPhotosets(self):
-        photosets = self.user.getPhotosets()
-        return photosets
+    def setSections(self, section_settings):
+        for title, set_id in section_settings.iteritems():
+            self._sections.append(PortfolioSection(title, set_id))
 
-    def getPhotos(self, photoset):
+    def getSections(self):
+        return self._sections
+
+
+class PortfolioSection(object):
+
+    def __init__(self, title, set_id):
+        self.title = title
+        self.slug = slugify(title)
+        self.set_id = set_id
+        self.photoset = flickr_api.Photoset(id=set_id)
+
+    def getPhotos(self):
         extras = ['url_sq', 'url_s', 'url_t', 'url_m', 'url_o']
-        return photoset.getPhotos(extras = extras)
+        return self.photoset.getPhotos(extras=extras)

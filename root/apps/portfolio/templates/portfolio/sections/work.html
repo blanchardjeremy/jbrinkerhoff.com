@@ -3,15 +3,28 @@
 <section id="work" class="main">
     <h2>Work</h2>
 
-    {% set types = ['art', 'design', 'objects', 'sketchbook'] %}
-    {% set sizes = ['500x350', '350x500', '500x350'] %}
+{#    {% set types = ['art', 'design', 'objects', 'sketchbook'] %}#}
+{#    {% set sizes = ['500x350', '350x500', '500x350'] %}#}
+{#    {% for type in types %}#}
+{#        <section id="{{ type }}">#}
+{#            <h3>{{ type }}</h3>#}
+{#            {% for size in sizes %}#}
+{#                <figure class="piece">#}
+{#                    <a href="#"><img src="http://placehold.it/{{ size }}" class="thumbnail"></a>#}
+{#                    <figcaption><strong>Title:</strong> Description here</figcaption>#}
+{#                </figure>#}
+{#            {% endfor %}#}
+{#        </section>#}
+{#    {% endfor %}#}
 
-    {% for type in types %}
-        <section id="{{ type }}">
-            <h3>{{ type }}</h3>
-            {% for size in sizes %}
+
+
+    {% for section in portfolio.getSections() %}
+        <section id="{{ section.slug }}">
+            <h3>{{ section.title }}</h3>
+            {% for piece in section.getPhotos() %}
                 <figure class="piece">
-                    <a href="#"><img src="http://placehold.it/{{ size }}" class="thumbnail"></a>
+                    <a href="#"><img src="{{ piece.url_m }}" class="thumbnail"></a>
                     <figcaption><strong>Title:</strong> Description here</figcaption>
                 </figure>
             {% endfor %}
