@@ -19,7 +19,7 @@ html {
 .header .container {
     height: 107px;
 }
-.container-primary h2 {
+.container-primary section.main {
     padding-top: 107px; /* For the nav jumping to work */
 }
 
@@ -51,6 +51,9 @@ body {
 
 /* ========================== CROSS-SITE ======== */
 
+body, p {
+    font-family: Tahoma, sans-serif;
+}
 
 h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
@@ -59,6 +62,10 @@ h1, h2, h3, h4 {
 }
 figure {
     margin: 0;
+}
+
+section {
+    margin-top: 20px;
 }
 
 .quote {
@@ -90,7 +97,7 @@ h1.logo {
     left: 0;
     right: 0;
     top: 184px;
-    z-index: 1030;
+    z-index: 0;
     margin-bottom: 0;
 }
 #home .nav-main {
@@ -146,3 +153,15 @@ h2.welcome {
 
 
 /* ========================== INNER ======== */
+
+
+.about {
+    color: #755d14;
+}
+
+.know h2 {
+    color: #a49638;
+}
+.life h2 {
+    color: #82550e;
+}
