@@ -1,3 +1,17 @@
 
-<h2 id="work">Work</h2>
-{{ lipsum(10) }}
+
+<section id="work">
+    <h2>Work</h2>
+
+    {% set types = ['art', 'design', 'objects', 'sketchbook'] %}
+
+    {% for type in types %}
+        <section id="{{ type }}">
+            <h3>{{ type }}</h3>
+            <a href="#"><img src="http://placehold.it/500x350" class="thumbnail"></a>
+            <a href="#"><img src="http://placehold.it/350x500" class="thumbnail"></a>
+            <a href="#"><img src="http://placehold.it/500x350" class="thumbnail"></a>
+        </section>
+    {% endfor %}
+
+</section>
