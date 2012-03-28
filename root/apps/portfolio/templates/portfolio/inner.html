@@ -2,12 +2,11 @@
 
 
 {% block content %}
-    <h2 id="work">Work</h2>
-    {{ lipsum(10) }}
-    <h2 id="about">About Me</h2>
-    {{ lipsum(10) }}
-    <h2 id="contact">Contact</h2>
-    {{ lipsum(10) }}
+
+    {% include "portfolio/sections/work.html" %}
+    {% include "portfolio/sections/about.html" %}
+    {% include "portfolio/sections/contact.html" %}
+
 {% endblock %}
 
 {% block js_footer %}
