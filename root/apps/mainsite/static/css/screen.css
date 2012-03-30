@@ -20,7 +20,11 @@ html {
     height: 107px;
 }
 .container-primary section.main {
-    padding-top: 107px; /* For the nav jumping to work */
+    /*For the nav jumping to work */
+    /*padding-top: 107px; */
+}
+body {
+    margin-top: 107px;
 }
 
 #home .header {

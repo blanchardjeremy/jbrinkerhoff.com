@@ -19,8 +19,8 @@ class Portfolio(object):
         self._sections = []
 
     def setSections(self, section_settings):
-        for title, set_id in section_settings.iteritems():
-            self._sections.append(PortfolioSection(title, set_id))
+        for section in section_settings:
+            self._sections.append(PortfolioSection(section['title'], section['photoset_id']))
 
     def getSections(self):
         return self._sections
@@ -28,11 +28,11 @@ class Portfolio(object):
 
 class PortfolioSection(object):
 
-    def __init__(self, title, set_id):
+    def __init__(self, title, photoset_id):
         self.title = title
         self.slug = slugify(title)
-        self.set_id = set_id
-        self.photoset = flickr_api.Photoset(id=set_id)
+        self.photoset_id = photoset_id
+        self.photoset = flickr_api.Photoset(id=photoset_id)
 
     def getPhotos(self):
         extras = ['url_sq', 'url_s', 'url_t', 'url_m', 'url_o', 'description']

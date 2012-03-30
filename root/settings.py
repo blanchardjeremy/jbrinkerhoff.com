@@ -29,11 +29,20 @@ FLICKR_SECRET = os.environ['FLICKR_SECRET']
 #FLICKR_USER_ID = '8039488@N07' # Auzigog // Jeremy Blanchard
 FLICKR_USER_ID = '68711717@N05' # oregonjessilyn // Jessliyn Brinkerhoff
 # A dictionary of section names and flickr set IDs for that section
-PORTFOLIO_SECTIONS = {
-    'Art': 72157629677986311,
-    'Design': 72157629313341834,
-    'Objects': 72157629313343524,
-}
+PORTFOLIO_SECTIONS = [
+    {
+        'title': 'Art',
+        'photoset_id': 72157629677986311,
+    },
+    {
+        'title': 'Design',
+        'photoset_id': 72157629313341834,
+    },
+    {
+        'title': 'Objects',
+        'photoset_id': 72157629313343524,
+    },
+]
 
 
 INSTALLED_APPS = [
