@@ -35,7 +35,7 @@ class PortfolioSection(object):
         self.photoset = flickr_api.Photoset(id=photoset_id)
 
     def getPhotos(self):
-        extras = ['url_sq', 'url_s', 'url_t', 'url_m', 'url_o', 'description']
+        extras = ['url_sq', 'url_s', 'url_t', 'url_m', 'url_o', 'url_l', 'description']
         return self.photoset.getPhotos(extras=extras)
 
 

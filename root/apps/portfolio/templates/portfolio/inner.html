@@ -10,6 +10,7 @@
 {% endblock %}
 
 {% block js_footer %}
+    {{ super() }}
     <script>
         $(document).ready(function() {
 
@@ -24,6 +25,21 @@
         		return false;
         	});
 
+
+            // Fancybox for photos
+            $("a.work-piece").fancybox({
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'width': '80%',
+                'height': '80%',
+//                'easingIn': 'easeOutBack',
+//                'easingOut': 'easeInBack',
+                'titleShow': true,
+                'titlePosition': 'inside',
+                'overlayColor': '#333',
+                'overlayOpacity': '0.7',
+                'cyclic': true
+            });
         });
     </script>
 {% endblock %}

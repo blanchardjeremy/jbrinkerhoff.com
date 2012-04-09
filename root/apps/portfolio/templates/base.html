@@ -5,8 +5,9 @@
 {% block css_bootstrap_responsive %}{% endblock %}
 
 {% block css_site %}
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-<link href="{{ STATIC_URL }}css/screen.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <link href="{{ STATIC_URL }}css/screen.css" rel="stylesheet">
 {% endblock %}
 
 {% block meta %}
@@ -41,6 +42,7 @@
                 <div class="span4 offset8">
                     <ul class="unstyled">
                         {% if is_home %}
+                            {# This hack is needed to make the links work from the home page, but allow scrollspy to work on the inner page #}
                             {% set inner = url('inner') %}
                         {% endif %}
                         <li>
@@ -71,7 +73,13 @@
 {% endblock %}
 
 {% block post_container %}
-<footer class="footer">
+    <footer class="footer">
 
-</footer>
+    </footer>
+{% endblock %}
+
+{% block js_footer %}
+    {{ super() }}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/fancybox/jquery.easing-1.3.pack.js"></script>
 {% endblock %}
