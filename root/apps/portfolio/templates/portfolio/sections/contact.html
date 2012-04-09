@@ -2,5 +2,15 @@
 
 <section id="contact" class="main">
     <h2>Contact</h2>
-    {{ lipsum(10) }}
+
+    <div class="row">
+        <div class="span7">
+            <section class="life">
+                <h3>What do you live for?</h3>
+{% markdown %}
+{{ snippets['tell'].text|safe }}
+{% endmarkdown %}
+            </section>
+        </div>
+    </div>
 </section>

@@ -26,21 +26,9 @@
         </div>
         <div class="span4">
             <figure class="photo">
-                <img src="http://placehold.it/250x250/" class="thumbnail">
+                <img src="{{ STATIC_URL }}img/jessilyn-photo.jpg" class="thumbnail">
             </figure>
         </div>
     </div>
-
-    <div class="row">
-        <div class="span7">
-            <section class="life">
-                <h3>What do you live for?</h3>
-{% markdown %}
-{{ snippets['tell'].text|safe }}
-{% endmarkdown %}
-            </section>
-        </div>
-    </div>
-
 
 </section>
