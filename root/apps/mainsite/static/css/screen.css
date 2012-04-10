@@ -93,17 +93,22 @@ h1.logo {
     position: relative;
     right: 0;
     top: 48px;
+    width: 300px;
 }
 #home h1.logo {
     top: 234px;
 }
 
+.sidebar {
+    float: right;
+    width: 300px;
+}
+
 .nav-main {
     margin-top: 70px;
     float: right;
-    width: 300px;
+    width: 242px;
     height: 400px;
-    margin-left: 100px;
 }
 #home .nav-main {
     /*top: 370px;  370-293=77 .... 107+77=184 */
@@ -138,7 +143,7 @@ h1.logo {
 }
 .nav-main ul ul.nav-work li {
     float: left;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 5px;
 }
 .nav-main ul ul.nav-work li a {
@@ -172,4 +177,14 @@ h2.welcome {
 }
 .life h3 {
     color: #82550e;
+}
+
+
+/* ========================== WORK ======== */
+
+#work h3 {
+    width: 300px;
+    margin-left: -310px;
+    margin-right: 10px;
+    text-align: right;
 }
