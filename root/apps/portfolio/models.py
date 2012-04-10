@@ -47,6 +47,7 @@ class TextSnippet(models.Model):
     def __unicode__(self):
         return self.internal_name
 
+
 class Quote(models.Model):
     quote = models.TextField(help_text="You can can format (bold, italic, lists, etc) your text like this: <a href=\"http://nestacms.com/docs/creating-content/markdown-cheat-sheet\">markdown</a>. If you want a line break without starting a whole new paragraph, end the line with two spaces.")
 

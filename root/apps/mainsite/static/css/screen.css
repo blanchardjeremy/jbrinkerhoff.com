@@ -98,17 +98,23 @@ h1.logo {
     top: 234px;
 }
 
+.nav-two {
+    float: right;
+    width: 400px;
+    height: 400px;
+    background-color: #f00;
+
+}
+
 .nav-main {
-    height: 200px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 184px;
-    z-index: 0;
-    margin-bottom: 0;
+    margin-top: 200px;
+    float: right;
+    width: 360px;
+    height: 400px;
+
 }
 #home .nav-main {
-    top: 370px; /* 370-293=77 .... 107+77=184 */
+    /*top: 370px;  370-293=77 .... 107+77=184 */
 }
 
 .nav-main ul {

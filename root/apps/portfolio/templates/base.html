@@ -30,19 +30,13 @@
                     </div>
                 </div>
                 {% block header_inner %}
-                    <h1 class="logo hide-text">Jessilyn Brinkerhoff</h1>
+                    <h1 class="logo hide-text clearfix">Jessilyn Brinkerhoff</h1>
                 {% endblock %}
-            </div>
-        {% endblock %}
-    </header>
 
-    <nav class="nav-main">
-        <div class="container">
-            <div class="row">
-                <div class="span4 offset8">
-                    <ul class="unstyled">
+                <div class="nav-main">
+
+                    <ul class="unstyled clearfix">
                         {% if is_home %}
-                            {# This hack is needed to make the links work from the home page, but allow scrollspy to work on the inner page #}
                             {% set inner = url('inner') %}
                         {% endif %}
                         <li>
@@ -58,9 +52,31 @@
                         <li><a href="{{ inner }}#connect">Connect</a></li>
                     </ul>
                 </div>
+{#                <div style="width: 200px; height: 200px;">&nbsp;</div>#}
+{#                <div class="nav-main clearfix">#}
+{#                    <ul class="unstyled clearfix">#}
+{#                        {% if is_home %}#}
+                            {# This hack is needed to make the links work from the home page, but allow scrollspy to work on the inner page #}
+{#                            {% set inner = url('inner') %}#}
+{#                        {% endif %}#}
+{#                        <li>#}
+{#                            <a href="{{ inner }}#work" class="has-subnav">Work</a>#}
+{#                            <ul class="unstyled nav-work">#}
+{#                                <li><a href="{{ inner }}#art">Art</a></li>#}
+{#                                <li><a href="{{ inner }}#design">Design</a></li>#}
+{#                                <li><a href="{{ inner }}#objects">Objects</a></li>#}
+{#                                <li><a href="{{ inner }}#sketchbook">Sketchbook</a></li>#}
+{#                            </ul>#}
+{#                        </li>#}
+{#                        <li><a href="{{ inner }}#about">About</a></li>#}
+{#                        <li><a href="{{ inner }}#connect">Connect</a></li>#}
+{#                    </ul>#}
+{#                </div>#}
+
             </div>
-        </div>
-    </nav>
+        {% endblock %}
+    </header>
+
 {% endblock %}
 
 
