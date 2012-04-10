@@ -98,20 +98,12 @@ h1.logo {
     top: 234px;
 }
 
-.nav-two {
-    float: right;
-    width: 400px;
-    height: 400px;
-    background-color: #f00;
-
-}
-
 .nav-main {
-    margin-top: 200px;
+    margin-top: 70px;
     float: right;
-    width: 360px;
+    width: 300px;
     height: 400px;
-
+    margin-left: 100px;
 }
 #home .nav-main {
     /*top: 370px;  370-293=77 .... 107+77=184 */
