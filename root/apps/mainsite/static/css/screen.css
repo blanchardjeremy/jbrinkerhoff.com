@@ -76,8 +76,8 @@ section section {
 }
 
 /* Need a way to fix the direct link anchor marin top issue */
-.container h2,
-.container h3 {
+.container-primary h2,
+.container-primary h3 {
     padding-top: 107px;
     margin-top: -107px;
 }
