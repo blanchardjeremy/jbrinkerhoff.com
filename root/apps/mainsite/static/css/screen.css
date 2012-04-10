@@ -24,7 +24,7 @@ html {
     /*padding-top: 107px; */
 }
 body {
-    margin-top: 107px;
+    padding-top: 107px;
 }
 
 #home .header {
@@ -35,7 +35,7 @@ body {
     height: 293px;
 }
 body#home {
-    margin-top: 293px;
+    padding-top: 293px;
 }
 
 .footer {
@@ -75,6 +75,10 @@ section section {
     margin-top: 20px;
 }
 
+/* Need a way to fix the direct link anchor marin top issue */
+.container h2 {
+}
+
 .quote p {
     color: white;
     font-size: 13px;
@@ -111,7 +115,7 @@ h1.logo {
     height: 400px;
 }
 #home .nav-main {
-    /*top: 370px;  370-293=77 .... 107+77=184 */
+    margin-top: 100px;
 }
 
 .nav-main ul {
