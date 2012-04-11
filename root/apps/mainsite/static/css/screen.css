@@ -121,39 +121,54 @@ h1.logo {
     margin-top: 100px;
 }
 
-.nav-main ul {
+.nav-main ul.nav {
 }
 
-.nav-main ul li {
+.nav-main ul.nav li {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
 }
+.nav-main ul.nav > li {
+    clear: both;
+}
 
-.nav-main ul li a {
+.nav-main ul.nav li a {
     color: #6c491a;
     font-size: 24px;
     line-height: 36px;
+    display: inline;
 }
-.nav-main ul li a:hover,
-.nav-main ul li a:visited,
-.nav-main ul li a:active {
+.nav-main ul.nav li a:visited,
+.nav-main ul.nav li a:active {
     /*text-decoration: none;*/
 }
-.nav-main ul li a.has-subnav {
+.nav-main ul.nav li a:hover,
+.nav-main ul.nav ul.nav-work li a:hover {
+    background-color: transparent;
+    text-decoration: none;
+    /*color: #2a782a;*/
+    color: #9e6a26;
+}
+.nav-main ul.nav li.active a,
+.nav-main ul.nav ul.nav-work li.active a {
+    color: #0088cc;
+}
+.nav-main ul.nav li a.has-subnav {
     float: left; /* Needed because subnav floats right */
     clear: both;
 }
 
-.nav-main ul ul.nav-work {
+.nav-main ul.nav ul.nav-work {
     float: right;
+    height: 25px;
 }
-.nav-main ul ul.nav-work li {
+.nav-main ul.nav ul.nav-work li {
     float: left;
     margin-left: 15px;
     margin-top: 5px;
 }
-.nav-main ul ul.nav-work li a {
+.nav-main ul.nav ul.nav-work li a {
     color: #444;
     font-size: 14px;
 }

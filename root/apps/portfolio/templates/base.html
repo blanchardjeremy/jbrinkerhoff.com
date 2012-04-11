@@ -15,6 +15,7 @@
     <link rel="icon" href="{{ STATIC_URL }}img/favicon.png">
 {% endblock %}
 
+{% block bodytag_extra %} data-spy="scroll" data-target="#primary-nav" data-offset=""{% endblock %}
 
 {% block pre_container %}
     <header class="header">
@@ -38,8 +39,8 @@
                         </a>
                     {% endblock %}
 
-                    <nav class="nav-main">
-                        <ul class="unstyled clearfix">
+                    <nav class="nav-main" id="primary-nav">
+                        <ul class="nav unstyled clearfix">
                             {% if is_home %}
                                 {% set inner = url('inner') %}
                             {% endif %}
