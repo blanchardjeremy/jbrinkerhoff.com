@@ -11,12 +11,12 @@
 {{ snippets['tell'].text|safe }}
 {% endmarkdown %}
             <div class="contact-form">
-                <form id="contactForm" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://jbrinkerhoff.wufoo.com/forms/z7x3x5/#public">
+                <form id="contactForm" name="form1" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="{{ WUFOO_FORM_URL }}">
                     ... or write me a little note:<br>
                     <input id="Field5" name="Field5" type="text" placeholder="your name" maxlength="255" tabindex="1" onkeyup="" class="span2" />
                     <input id="Field2" name="Field2" type="email" spellcheck="false" placeholder="your email" maxlength="255" tabindex="2" class="span2" />
                     <textarea id="Field6" name="Field6" placeholder="your words" spellcheck="true" rows="3" cols="50" tabindex="3" onkeyup="" style="width:275px;" ></textarea><br>
-                    <input type="hidden" id="idstamp" name="idstamp" value="HrerzDGytGaNAgJjXXF+X1uV+ZkGIl9rM78Wled6lBs=" />
+                    <input type="hidden" id="idstamp" name="idstamp" value="{{ WUFOO_FORM_KEY }}" />
                     <button type="submit" class="btn">Connect!</button>
                 </form>
                 <div class="alert alert-success" id="successMessage">

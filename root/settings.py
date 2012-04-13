@@ -22,6 +22,10 @@ TEMPLATE_DEBUG = DEBUG
 # Whether or not django should serve static files through its wsgi server. Suggested against in the docs, but makes deployment to heroku easier.
 DJANGO_SERVE_STATIC = boolcheck(os.environ.get('DJANGO_SERVE_STATIC', 'True'))
 
+USER_EMAIL = 'oregonjessilyn@gmail.com'
+
+WUFOO_FORM_URL = 'http://jbrinkerhoff.wufoo.com/forms/z7x3x5/#public'
+WUFOO_FORM_KEY = 'HrerzDGytGaNAgJjXXF+X1uV+ZkGIl9rM78Wled6lBs='
 
 FLICKR_KEY = '32a3ec8e88ca294bc1363c374e9cf922'
 FLICKR_SECRET = os.environ['FLICKR_SECRET']
@@ -84,7 +88,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     'django.core.context_processors.request',
     'django.contrib.messages.context_processors.messages',
     'portfolio.context_processors.quotes',
-    'portfolio.context_processors.is_home',
+    'portfolio.context_processors.base',
 ]
 
 TEMPLATE_LOADERS = [
