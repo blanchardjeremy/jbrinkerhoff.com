@@ -7,4 +7,5 @@ urlpatterns = patterns('',
 
 
     url(r'^flickr/$',    FlickrCacheResetView.as_view(),  name='flickr_cache_reset'),
+    url(r'^help/$',     HelpView.as_view(), name='help')
 )

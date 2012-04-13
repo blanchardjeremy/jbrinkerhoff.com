@@ -10,9 +10,9 @@ from portfolio.models import Portfolio, TextSnippet
 class HomeView(TemplateView):
     template_name = 'portfolio/home.html'
 
+
 class InnerView(TemplateView):
     template_name = 'portfolio/inner.html'
-
 
     def get_snippets(self):
         return dict([(s.internal_name, s) for s in TextSnippet.objects.all()])
@@ -34,3 +34,7 @@ class FlickrCacheResetView(RedirectView):
         cache.clear()
 
         return reverse('inner')
+
+
+class HelpView(TemplateView):
+    template_name = 'portfolio/help.html'

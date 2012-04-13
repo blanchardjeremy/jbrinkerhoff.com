@@ -6,4 +6,4 @@ def quotes(request):
     return {'quote': quote}
 
 def is_home(request):
-    return {'is_home': bool(request.META['PATH_INFO'] == reverse('home'))}
+    return {'is_inner': bool(request.META['PATH_INFO'] == reverse('inner'))}

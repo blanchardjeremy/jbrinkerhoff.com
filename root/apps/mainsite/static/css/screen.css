@@ -50,6 +50,13 @@ footer p {
     font-size: 11px;
     color: #222;
 }
+footer a,
+footer a:hover,
+footer a:active,
+footer a:visited {
+    color: #222;
+    text-decoration: underline;
+}
 
 .fixed-footer {
     background: url("../img/footer.png") center bottom repeat-x;

@@ -41,7 +41,7 @@
 
                     <nav class="nav-main" id="primary-nav">
                         <ul class="nav unstyled clearfix">
-                            {% if is_home %}
+                            {% if not is_inner %}
                                 {% set inner = url('inner') %}
                             {% endif %}
                             <li>
