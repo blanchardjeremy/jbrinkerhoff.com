@@ -4,6 +4,7 @@ A Django application for Jessilyn Brinkerhoff's portfolio.
 
 Visit the site at **[http://jbrinkerhoff.com][jb]**
 
+
 ## Cool things about this site
 
   * Hosted on [Heroku](http://www.heroku.com/) (using Jeremy's [Django projecttemplate for heroku](http://github.com/auzigog/django-template-heroku/))
@@ -11,6 +12,8 @@ Visit the site at **[http://jbrinkerhoff.com][jb]**
   * Uses the [Flickr API](http://www.flickr.com/services/api/) to store/organize photos (via [python-flickr-api](http://code.google.com/p/python-flickr-api/))
   * Caching of Flickr API requests
   * Uses Jinja2 templates and markdown filters
+  * Stores text and quotes in the database for easy editing
+
 
 ## Usage
 When you begin working on this project, do the following:
@@ -25,7 +28,7 @@ When you begin working on this project, do the following:
 Some things we might want to implement in the future:
 
   * Combine front page and second page as one scroll effect
-  * Rollover images on the side nav
+
 
 ## Heroku deploy instructions
 
@@ -40,8 +43,6 @@ Some things we might want to implement in the future:
     # Custom domains: configure your DNS as such: https://devcenter.heroku.com/articles/custom-domains
     heroku domains:add www.jbrinkerhoff.com
     heroku domains:add jbrinkerhoff.com
-
-
 
 
 ## Authors
