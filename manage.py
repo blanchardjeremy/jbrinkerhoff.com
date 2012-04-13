@@ -5,10 +5,10 @@ import os
 
 # assume 'apps' is a directory with same parent directory as us
 APPS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), 'root', 'apps'))
-FOO = os.path.abspath(os.path.join(os.path.dirname(__file__)))
+#FOO = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 if APPS_DIR not in sys.path:
     sys.path.insert(0, APPS_DIR)
-    sys.path.insert(0, FOO)
+#    sys.path.insert(0, FOO)
 
 
 if __name__ == "__main__":

@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'portfolio',
 
     'bootstrap',
+    'gunicorn',
 
     'django.contrib.auth',
     'django.contrib.contenttypes',

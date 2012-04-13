@@ -6,7 +6,7 @@ from django.core.handlers.wsgi import WSGIHandler
 # assume we are in ./etc and we want to add ./apps to PYTHON_PATH
 TOP_DIR = os.path.dirname(os.path.dirname(__file__))
 
-APPS_DIR = os.path.join(TOP_DIR, 'apps')
+APPS_DIR = os.path.join(TOP_DIR, 'root', 'apps')
 if APPS_DIR not in sys.path:
     sys.path.insert(0, APPS_DIR)
 
