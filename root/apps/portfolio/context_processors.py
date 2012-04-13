@@ -10,6 +10,6 @@ def base(request):
     return {
         'is_inner': bool(request.META['PATH_INFO'] == reverse('inner')),
         'USER_EMAIL': settings.USER_EMAIL,
-        'WUFOO_FORM_URL': settings.WUFOO_FORM_KEY,
+        'WUFOO_FORM_URL': settings.WUFOO_FORM_URL,
         'WUFOO_FORM_KEY': settings.WUFOO_FORM_KEY,
     }
