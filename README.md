@@ -45,6 +45,14 @@ Some things we might want to implement in the future:
     heroku domains:add jbrinkerhoff.com
 
 
+## Other stuff
+The logo design is available in the `design` directory.
+
+
+## License
+This project (design and code) are licensed under the [MIT License](http://www.opensource.org/licenses/MIT).
+
+
 ## Authors
 Built with love! Design by [Jessilyn Brinkerhoff][jb] and code by [Jeremy Blanchard](http://blanchardjeremy.com).
 
