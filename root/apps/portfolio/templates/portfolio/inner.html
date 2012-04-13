@@ -9,6 +9,15 @@
 
 {% endblock %}
 
+{% block post_container %}
+    <footer>
+        <div class="container">
+            <p>2012, design by jessilyn, code by <a href="http://blanchardjeremy.com">jeremy</a>, code on github</p>
+        </div>
+    </footer>
+    {{ super() }}
+{% endblock %}
+
 {% block js_footer %}
     {{ super() }}
     <script>
@@ -40,6 +49,32 @@
                 'overlayOpacity': '0.7',
                 'cyclic': true,
                 'hideOnContentClick': true
+            });
+
+            // Submit contact form with ajax
+            $("#contactForm").submit(function(event) {
+                var form$ = $(this);
+                console.log(form$);
+                console.log(form$.serialize());
+                console.log(form$.attr('action'));
+
+                var jqxhr = $.post(form$.attr('action'), form$.serialize());
+
+                jqxhr
+                .success(function() {
+                    console.log("success");
+                })
+                .error(function() {
+                    console.log("error");
+                    console.log($.ajaxError());
+                })
+                .complete(function() {
+                    console.log("complete");
+                });
+                form$.slideUp();
+                $("#successMessage").slideDown();
+                console.log('after async init');
+                return false;
             });
         });
     </script>

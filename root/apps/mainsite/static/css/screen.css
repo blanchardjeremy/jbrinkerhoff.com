@@ -38,7 +38,13 @@ body#home {
     padding-top: 293px;
 }
 
-.footer {
+footer {
+    background-color: #cccccc;
+    padding: 10px 0 40px 0;
+    margin-top: 40px;
+}
+
+.fixed-footer {
     background: url("../img/footer.png") center bottom repeat-x;
     height: 31px;
     position: fixed;
@@ -47,9 +53,6 @@ body#home {
     bottom: 0;
     z-index: 1030;
     margin-bottom: 0;
-}
-body {
-    padding-bottom: 40px;
 }
 
 
@@ -69,17 +72,17 @@ figure {
 }
 
 section {
-    margin-top: 40px;
+    /*margin-top: 40px;*/
 }
 section section {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 /* Need a way to fix the direct link anchor marin top issue */
 .container-primary h2,
 .container-primary h3 {
-    padding-top: 107px;
-    margin-top: -107px;
+    /*padding-top: 107px;*/
+    /*margin-top: -107px;*/
 }
 
 .quote p {
@@ -222,4 +225,11 @@ h2.welcome {
     margin-left: -310px;
     margin-right: 10px;
     text-align: right;
+}
+
+
+/* ========================== CONNECT ======== */
+
+#successMessage {
+    display: none;
 }
