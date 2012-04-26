@@ -9,7 +9,7 @@ oauth==1.0.1
 gunicorn==0.14.2
 #svn+http://python-flickr-api.googlecode.com/svn/trunk/#egg=flickr_api
 git+https://github.com/alexis-mignon/python-flickr-api.git@a355563386de0ca8dd497f88bc1376dfd7439c9a#egg=flickr_api
-git+https://github.com/auzigog/jinja-bootstrap.git#egg=bootstrap
+git+https://github.com/auzigog/jinja-bootstrap.git@v0.2.0#egg=bootstrap
 git+https://github.com/qnub/Jinja2-Markdown.git
 
 
