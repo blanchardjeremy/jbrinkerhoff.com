@@ -7,11 +7,14 @@
 ## I want to change the text/quotes on the site
 Go to the <a href="/admin/">admin page</a>. Username: jessilyn, password: the usual one
 
+## How to format the text in the body/quotes
+The text is all formatted using markdown. Check out this [markdown formatting cheat sheet](http://support.mashery.com/docs/customizing_your_portal/Markdown_Cheat_Sheet).
+
 ## I want to modified the photos on the site
 Just log in to your flickr account and change things in there. Add/move/remove them from the existing sets.
 
 ## I modified my photos on flickr, why aren't they changing on the site?
-<a class="btn btn-primary" href="{{ url('flickr_cache_reset') }}">Click here to refresh</a> (this happens automatically every 15 minutes)
+<a class="btn" href="{{ url('flickr_cache_reset') }}">Click here to refresh manually</a> (this happens automatically every 15 minutes)
 
 ## I want to add a new set to the site
 Jeremy can do that in the code. He will add a navigation item to the sidebar and link up the new set to the `settings.py` file.

@@ -18,7 +18,7 @@
         "pk": 2,
         "model": "portfolio.textsnippet",
         "fields": {
-            "text": "Design (see [resum&eacute;](http://noresume.com/))  \r\nArt  \r\nCommunity Organizing  \r\nGardening  ",
+            "text": "Design (see [resum&eacute;](/static/files/jessilyn-brinkerhoff-resume.pdf))  \r\nArt  \r\nCommunity Organizing  \r\nGardening  ",
             "internal_name": "know"
         }
     },
