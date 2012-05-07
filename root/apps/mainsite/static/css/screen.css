@@ -111,6 +111,10 @@ section section {
     position: absolute;
 }
 
+.sidebar a:hover {
+    text-decoration: none;
+}
+
 h1.logo {
     background: url("../img/jessilyn-brinkerhoff-logo.png") right center no-repeat;
     height: 140px;
